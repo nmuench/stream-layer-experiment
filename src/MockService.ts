@@ -3,7 +3,10 @@ import WebSocket from "ws";
 import Point from "@arcgis/core/geometry/Point.js";
 interface Feature {
   attributes: any;
-  geometry: any;
+  geometry: {
+    x: number;
+    y: number;
+  };
 }
 
 /**
